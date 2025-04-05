@@ -37,6 +37,12 @@
             <a href="#" class="navbar__logo">
                 <img src="./src/img/logo_albec_horizontal.png" alt="Logo de ALBEC" height="70px">
             </a>
+            <label class="navbar_menu-button">
+                <input type="checkbox" class="button-checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="navbar__enlaces">
                 <a class="navbar__enlace" href="#">Inicio</a>
                 <a class="navbar__enlace" href="#">Proyectos</a>
@@ -44,30 +50,48 @@
                 <a class="navbar__enlace" href="#">Conócenos</a>
                 <a class="navbar__enlace" href="#">Intranet</a>
             </ul>
-            <a class="navbar__enlace navbar__a--colorbutton" href="#">Contáctanos</a>
+            <a class="navbar__enlace--contacto navbar__enlace navbar__a--colorbutton" href="#">Contáctanos</a>
         </nav>
     </header>
 
-    <main class="main contenedor">
-        <section class="muestra">
-            <article class="muestra__imagen tarjeta-grid">
+    <main class="main">
+
+        <section class="muestra contenedor2">
+            <article class="muestra__imagen">
             </article>
 
-            <article class="muestra__video tarjeta-grid">
+            <article class="muestra__video">
                 <video class="video" src="./src/video/palmo_video.mp4" autoplay loop muted playsinline
                     aria-hidden="true"></video>
             </article>
 
             <div class="muestra__banner">
+                <div class="banner__titulo">
+                    <p>Proyecto:</p>
+                    <p>Palmo Dorado</p>
+                </div>
+                <div class="banner__informacion">
+                    <div>
+                        <p>Separa tu lote desde:</p>
+                        <p>S/3,000</p>
+                    </div>
+                    <div>
+                        <img src="./src/icon/near-me-colorprimario.svg" alt="Ícono de ubicación">
+                        <p>En Ferreñafe</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--             <div class="muestra__banner">
                 <p class="muestra__banner--default">Proyecto</p>
                 <p>PALMO DORADO🌤️</p>
                 <p class="muestra__banner--default">SEPARA TU LOTE DESDE: <span>S/3000</span></p>
                 <p class="muestra__banner--default"><img src="./src/icon/location.svg" alt="">Ferreñafe -
                     Chiclayo</p>
-            </div>
+            </div> -->
         </section>
 
-        <section class="contenido fuente-principal">
+        <section class="contenido fuente-principal contenedor">
 
             <div class="informacion__izquierda">
 
@@ -146,37 +170,39 @@
                             <p>
                                 Escritura pública (sujeto a tasa correspondiente)
                             </p>
-                            <img src="./src/icon/document.svg" alt="Ícono sobre un documento">
+                            <img src="./src/icon/document.svg" alt="Ícono sobre un documento" draggable="false">
                         </div>
                         <div class="beneficio">
                             <p>
                                 Factibilidad de servicios
                             </p>
-                            <img src="./src/icon/valve.svg" alt="Ícono sobre una válvula">
+                            <img src="./src/icon/valve.svg" alt="Ícono sobre una válvula" draggable="false">
                         </div>
                         <div class="beneficio">
                             <p>
                                 Vías afirmadas
                             </p>
-                            <img src="./src/icon/road.svg" alt="Ícono sobre una carretera">
+                            <img src="./src/icon/road.svg" alt="Ícono sobre una carretera" draggable="false">
                         </div>
                         <div class="beneficio">
                             <p>
                                 Parques y jardines
                             </p>
-                            <img src="./src/icon/tree-and-person.svg" alt="Ícono sobre un arbol y una persona">
+                            <img src="./src/icon/tree-and-person.svg" alt="Ícono sobre un arbol y una persona"
+                                draggable="false">
                         </div>
                         <div class="beneficio">
                             <p>
                                 Cancha sintética
                             </p>
-                            <img src="./src/icon/football.svg" alt="Ícono sobre un balón de futból">
+                            <img src="./src/icon/football.svg" alt="Ícono sobre un balón de futból" draggable="false">
                         </div>
                         <div class="beneficio">
                             <p>
                                 Caseta de vigilancia las 24 horas
                             </p>
-                            <img src="./src/icon/security.svg" alt="Ícono sobre un escudo de seguridad">
+                            <img src="./src/icon/security.svg" alt="Ícono sobre un escudo de seguridad"
+                                draggable="false">
                         </div>
                     </div>
                 </section> <!-- [1.4] FIN: BENEFICIOS -->
@@ -346,7 +372,7 @@
 
         <div class="footer_contenido">
             <a href="#">
-                <img src="./src/img/logo_albec.png"Logo de empresa ALBEC" draggable="false" class="logo">
+                <img src="./src/img/logo_albec.png" Logo de empresa ALBEC" draggable="false" class="logo">
             </a>
             <div class="footer_redes">
                 <p>Nuestras Redes</p>
