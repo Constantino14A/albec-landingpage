@@ -87,6 +87,7 @@ body {
 }
 
 .banner__titulo {
+    font-family: var(--fuenteHeading);
     font-size: 2rem;
     text-align: center;
     color: var(--blanco);
@@ -291,7 +292,7 @@ body {
 }
 
 .ubicacion__mapa {
-    aspect-ratio: 10 / 7;
+    aspect-ratio: 10 / 13;
     width: 100%;
     margin: 0 auto;
 }
@@ -681,7 +682,7 @@ body {
     background: transparent;
     cursor: pointer;
 
-    /* layout */    
+    /* layout */
     position: relative;
     display: block;
     width: 40px;
@@ -799,6 +800,14 @@ body {
 
 /* ((MEDIA QUERYS)) */
 
+@media (min-width: 468px) {
+    .ubicacion__mapa {
+        aspect-ratio: 10/9;
+    }
+
+}
+
+
 @media (min-width: 768px) {
     .navbar_menu-button {
         order: 3;
@@ -807,6 +816,10 @@ body {
     .navbar__enlace--contacto {
         order: 2;
         display: block;
+    }
+
+    .ubicacion__mapa {
+        aspect-ratio: 10/7;
     }
 }
 
@@ -848,6 +861,7 @@ body {
 
     .contenido {
         flex-direction: row;
+        gap: 4rem;
         margin-top: 8rem;
     }
 
@@ -865,14 +879,13 @@ body {
 
     /* ((MUESTRA)) */
     .muestra {
-        height: 60rem;
-
-        /*  */
+        /* layout */
+        position: relative;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.5fr 1fr;
         grid-auto-flow: dense;
         column-gap: .5rem;
-        position: relative;
+        height: 60rem;
     }
 
     .muestra__banner {
@@ -900,15 +913,15 @@ body {
         opacity: .7;
     }
 
-
     .informacion__izquierda {
-        flex: 3;
+        flex: 2.8;
         min-width: 0;
     }
 
     .informacion__derecha {
         flex: 1.3;
         min-width: 0;
+        margin-bottom: 7rem;
     }
 
     /* ((INFORMACION TOP)) */
@@ -927,6 +940,7 @@ body {
 
     .ubicacion__mapa {
         width: 90%;
+        aspect-ratio: 10 / 7;
     }
 
     /* ((BENEFICIOS)) */
@@ -944,6 +958,8 @@ body {
     /* ((FORMULARIO)) */
 
     .formulario {
+        position: sticky;
+        top: 18rem;
         gap: 1rem;
         padding: 3rem;
         width: 100%;
@@ -958,5 +974,13 @@ body {
     .navbar__enlaces {
         display: flex;
         gap: 2rem;
+    }
+}
+
+/* ((MEDIA QUERYS WITH ASPECT RATIO)) */
+
+@media (min-aspect-ratio: 16/9) and (max-width: 1500px) {
+    .formulario {
+        top: 10rem;
     }
 }
